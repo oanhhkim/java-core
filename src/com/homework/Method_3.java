@@ -1,4 +1,4 @@
-package HW1;
+package com.homework;
 
 import javax.jnlp.ClipboardService;
 import java.util.ArrayList;
