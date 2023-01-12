@@ -1,3 +1,7 @@
+import javax.jnlp.ClipboardService;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test {
     /*
      * Viết chương trình tìm tất cả các số chia hết cho 7 nhưng không phải bội số của 5,
@@ -6,14 +10,23 @@ public class Test {
      */
 
     public static void main(String[] args) {
-        checkNum();
+        System.out.println(display());
     }
 
-    public static void checkNum(){
+    public static List<Integer> checkNum(){
+        List<Integer> list = new ArrayList<>();
         for(int i = 10; i<=200; i++){
             if(i%7==0 && i%5!=0){
-                System.out.print(i+",");
+                list.add(i);
             }
         }
+        return list;
     }
+    public static String display(){
+        String str = new String(checkNum().toString());
+        String str2= str.replace("["," ");
+        String str3 = str2.replace("]"," ");
+        return str3;
+    }
+
 }
