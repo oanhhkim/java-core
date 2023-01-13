@@ -14,7 +14,7 @@ public class Method_2 {
         System.out.println(display());
     }
 
-    public static List<Integer> checkNum(){
+    public static List<Integer> checkingNum(){
         List<Integer> list = new ArrayList<>();
         for(int i = 10; i<=200; i++){
             if(i%7==0 && i%5!=0){
@@ -24,7 +24,7 @@ public class Method_2 {
         return list;
     }
     public static String display(){
-        String str = new String(checkNum().toString());
+        String str = new String(checkingNum().toString());
         String str2= str.replace("["," ");
         String str3 = str2.replace("]"," ");
         return str3;
